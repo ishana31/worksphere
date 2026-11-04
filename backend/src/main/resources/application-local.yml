@@ -1,0 +1,7 @@
+# Local development profile: unauthenticated requests, no Keycloak issuer lookup
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ""

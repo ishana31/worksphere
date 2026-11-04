@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: worksphere
+  profiles:
+    default: prod
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:3306/worksphere?useSSL=false&allowPublicKeyRetrieval=true
+    username: ${DB_USER:worksphere_user}
+    password: ${DB_PASSWORD:worksphere_password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    baseline-version: '0'
+
+server:
+  port: 8081

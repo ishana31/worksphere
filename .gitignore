@@ -1,0 +1,20 @@
+build.gradle
+gradlew
+gradlew.bat
+mvnw
+mvnw.cmd
+pom.xml
+*.log
+backend/*.log
+
+# Generated build files
+**/build/
+**/.gradle/
+backend/gradle-8.7-bin.zip
+
+# Frontend dependencies and output
+**/node_modules/
+**/dist/
+
+# Environment files
+.env
